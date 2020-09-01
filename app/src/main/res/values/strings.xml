@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CrowdFund</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="projects">Projects</string>
+    <string name="tshs">TShs</string>
+    <string name="invest_now">Invest now</string>
+    <string name="_10">10%</string>
+    <string name="annual_return">Annual Return</string>
+    <string name="_2">2%</string>
+    <string name="membership">Membership+</string>
+    <string name="_0_5">0.5%</string>
+</resources>
