@@ -21,51 +21,50 @@ public class ProjectsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_projects);
-
-        //Create accessories element
-        accessory = findViewById(R.id.accessories);
-        accessory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //startActivity(new Intent(ProjectsActivity.this.ProjectDashboardActivity.class));
-            }
-        });
-
-        //Create spinner element
-        Spinner spinner = findViewById(R.id.spiner);
-
-        //Spinner click listener
-        spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
-
-        //Spinner dropdown list
-        List<String> categories = new ArrayList<String>();
-        categories.add("Agriculture");
-        categories.add("Education");
-        categories.add("Finance");
-        categories.add("Mining & Minerals");
-        categories.add("Electronics");
-        categories.add("Construction");
-
-        //create adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
-
-        //Dropdown layout style
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        //Attaching data adapter to spinner
-        spinner.setAdapter(dataAdapter);
     }
 
-    //METHODS TO BE DEFINED LATER
+    public void cardClicked(View view){
+        if (view.getId() == R.id.accessories){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.automobile){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.restaurant){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
 
-//    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//        // On selecting a spinner item
-//        String item = parent.getItemAtPosition(position).toString();
-//
-//        // Showing selected spinner item
-//        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
-//    }
-//    public void onNothingSelected(AdapterView<?> arg0) {
-//        TODO Auto-generated method stub
-//    }
+        else if(view.getId() == R.id.computers){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.maize){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.pork){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.mining){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.stationaries){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.avocado){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+        else if(view.getId() == R.id.automobile){
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        }
+    }
 }
+

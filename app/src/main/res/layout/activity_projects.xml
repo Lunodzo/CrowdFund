@@ -38,12 +38,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Choose Category"/>
-        <Spinner
-            android:id="@+id/spiner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:prompt="Choose"
-            />
+<!--        <Spinner-->
+<!--            android:id="@+id/spiner"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:prompt="Choose"-->
+<!--            />-->
 
     </LinearLayout>
 
@@ -63,7 +63,8 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:layout_margin="5dp"
-            tools:ignore="DuplicateIds">
+            tools:ignore="DuplicateIds"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -78,7 +79,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating0"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -137,12 +138,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/mining"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:layout_margin="5dp"
-            tools:ignore="DuplicateIds">
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -157,7 +158,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating2"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -168,7 +169,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Mining"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -216,11 +217,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/automobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -235,7 +237,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating1"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -246,7 +248,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="AutoMobiles"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -294,11 +296,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/stationaries"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -313,7 +316,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating3"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -324,7 +327,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Stationaries"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -372,11 +375,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -391,7 +395,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating4"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -402,7 +406,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Restaurant"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -450,11 +454,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/avocado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -469,7 +474,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating5"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -480,7 +485,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Avocado Exp"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -528,11 +533,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/pork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -547,7 +553,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating6"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -558,7 +564,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Pork Farm"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -606,11 +612,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/maize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -625,7 +632,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating7"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -636,7 +643,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Maize Farm"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -684,11 +691,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/computers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -703,7 +711,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating8"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -714,7 +722,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Orange Export"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -762,11 +770,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/computers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -781,7 +790,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating8"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -792,7 +801,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Orange Export"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -840,11 +849,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/computers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -859,7 +869,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating8"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -870,7 +880,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Orange Export"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -918,11 +928,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/computers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -937,7 +948,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating8"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -948,7 +959,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Orange Export"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -996,11 +1007,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/computers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1015,7 +1027,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating8"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -1026,7 +1038,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Orange Export"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -1074,11 +1086,12 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
+            android:id="@+id/computers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:onClick="cardClicked">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1093,7 +1106,7 @@
                 <RatingBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/rating"
+                    android:id="@+id/rating8"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:numStars="3"
                     android:rating="2"
@@ -1104,319 +1117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="3dp"
-                    android:text="Accessories"
-                    android:textColor="@color/colorPrimary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20 Members"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="8 Yrs operational"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="2dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TSh."
-                        android:textSize="5dp"
-                        android:textColor="@color/colorPrimaryDark"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="200,000/-"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTitles"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-                </LinearLayout>
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_margin="5dp">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
-                    android:src="@drawable/baloon" />
-
-                <RatingBar
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rating"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:numStars="3"
-                    android:rating="2"
-                    android:stepSize="1"
-                    android:isIndicator="true"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="3dp"
-                    android:text="Accessories"
-                    android:textColor="@color/colorPrimary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20 Members"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="8 Yrs operational"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="2dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TSh."
-                        android:textSize="5dp"
-                        android:textColor="@color/colorPrimaryDark"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="200,000/-"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTitles"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-                </LinearLayout>
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_margin="5dp">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
-                    android:src="@drawable/baloon" />
-
-                <RatingBar
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rating"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:numStars="3"
-                    android:rating="2"
-                    android:stepSize="1"
-                    android:isIndicator="true"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="3dp"
-                    android:text="Accessories"
-                    android:textColor="@color/colorPrimary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20 Members"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="8 Yrs operational"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="2dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TSh."
-                        android:textSize="5dp"
-                        android:textColor="@color/colorPrimaryDark"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="200,000/-"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTitles"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-                </LinearLayout>
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_margin="5dp">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
-                    android:src="@drawable/baloon" />
-
-                <RatingBar
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rating"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:numStars="3"
-                    android:rating="2"
-                    android:stepSize="1"
-                    android:isIndicator="true"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="3dp"
-                    android:text="Accessories"
-                    android:textColor="@color/colorPrimary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20 Members"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="8 Yrs operational"
-                        android:textSize="9dp"
-                        android:paddingLeft="3dp"
-                        android:textColor="@color/colorSubtitles"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="2dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TSh."
-                        android:textSize="5dp"
-                        android:textColor="@color/colorPrimaryDark"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="200,000/-"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTitles"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-                </LinearLayout>
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/accessories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:layout_margin="5dp">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="87dp"
-                    android:src="@drawable/baloon" />
-
-                <RatingBar
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rating"
-                    style="@style/Widget.AppCompat.RatingBar.Small"
-                    android:numStars="3"
-                    android:rating="2"
-                    android:stepSize="1"
-                    android:isIndicator="true"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="3dp"
-                    android:text="Accessories"
+                    android:text="Orange Export"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
