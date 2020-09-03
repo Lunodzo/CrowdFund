@@ -24,7 +24,7 @@ public class ProjectsActivity extends AppCompatActivity {
     }
 
     public void cardClicked(View view){
-        if (view.getId() == R.id.accessories){
+        if (view.getId() == R.id.stationaries){
             Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
             startActivity(accesoriesIntent);
         }

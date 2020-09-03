@@ -19,8 +19,9 @@ public class ProjectDashboardActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent moveIntent = new Intent(getApplicationContext(), ProjectsActivity.class);
                 Toast.makeText(getApplicationContext(), "Coming soon", Toast.LENGTH_LONG).show();
-                //startActivity(mainIntent);
+                startActivity(moveIntent);
             }
         });
     }

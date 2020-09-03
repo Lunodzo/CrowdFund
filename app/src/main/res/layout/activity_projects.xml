@@ -3,14 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:weightSum="10"
     android:isScrollContainer="true"
     android:background="@drawable/background">
 
 
+
     <!--    Layout title-->
-        <TextView
+    <TextView
             android:id="@+id/gridTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -18,15 +20,18 @@
             android:text="@string/projects"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/colorWhite"
-            android:textSize="60sp"
+            android:textSize="50sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"/>
+
+
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scrollbarStyle="insideOverlay"
-        android:scrollbarSize="5dp">
+        android:scrollbarSize="5dp"
+        android:layout_marginTop="5dp">
         <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -586,7 +591,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/computers"
+                android:id="@+id/computers1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -1060,5 +1065,23 @@
 
             </androidx.cardview.widget.CardView>
         </GridLayout>
+
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_launcher_foreground"
+            app:rippleColor="@color/colorPrimaryDark"
+            android:layout_gravity="end|bottom"
+            android:onClick="floatingButton"
+            />
+    </LinearLayout>
+
 </LinearLayout>
