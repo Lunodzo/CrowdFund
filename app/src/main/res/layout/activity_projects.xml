@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,7 +15,6 @@
             android:id="@+id/gridTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:text="@string/projects"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/colorWhite"
@@ -53,6 +51,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="87dp"
+                        android:contentDescription="@string/sample_desc"
                         android:src="@drawable/baloon" />
 
                     <RatingBar
@@ -65,33 +64,36 @@
                         android:stepSize="1"
                         android:isIndicator="true"
                         />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="3dp"
-                        android:text="Mining"
+                        android:text="@string/mining"
                         android:textColor="@color/colorPrimary"
                         android:textStyle="bold"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
-                            android:textSize="9dp"
+                            android:text="@string/members"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:textColor="@color/colorSubtitles"
+                            android:textSize="9sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
-                            android:textSize="9dp"
+                            android:text="@string/operational"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:textColor="@color/colorSubtitles"
+                            android:textSize="9sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -99,16 +101,17 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="2dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TSh."
-                            android:textSize="5dp"
-                            android:textColor="@color/colorPrimaryDark"/>
+                            android:text="@string/tsh"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="5sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -132,6 +135,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="87dp"
+                        android:contentDescription="@string/sample_desc"
                         android:src="@drawable/baloon" />
 
                     <RatingBar
@@ -144,33 +148,38 @@
                         android:stepSize="1"
                         android:isIndicator="true"
                         />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="3dp"
-                        android:text="AutoMobiles"
+                        android:text="@string/automobiles"
                         android:textColor="@color/colorPrimary"
                         android:textStyle="bold"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
-                            android:textSize="9dp"
+                            android:paddingRight="3dp"
+                            android:text="@string/members"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:textColor="@color/colorSubtitles"
+                            android:textSize="9sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
-                            android:textSize="9dp"
+                            android:paddingRight="3dp"
+                            android:text="@string/operational"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:textColor="@color/colorSubtitles"
+                            android:textSize="9sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -178,16 +187,17 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="2dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TSh."
-                            android:textSize="5dp"
-                            android:textColor="@color/colorPrimaryDark"/>
+                            android:text="@string/tsh"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="5sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -203,7 +213,7 @@
                 android:layout_margin="5dp"
                 android:onClick="cardClicked">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     >
@@ -224,32 +234,35 @@
                         android:isIndicator="true"
                         />
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="3dp"
-                        android:text="Stationaries"
+                        android:text="@string/stationaries"
                         android:textColor="@color/colorPrimary"
                         android:textStyle="bold"
+                        android:textSize="20dp"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
-                            android:textSize="9dp"
+                            android:text="@string/members"
+                            android:textColor="@color/colorSubtitles"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:textSize="9sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
-                            android:textSize="9dp"
+                            android:text="@string/operational"
+                            android:textColor="@color/colorSubtitles"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:textSize="9sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -266,7 +279,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -318,14 +331,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
+                            android:text="@string/members"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
+                            android:text="@string/operational"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
@@ -345,7 +358,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -397,14 +410,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
+                            android:text="@string/members"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
+                            android:text="@string/operational"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
@@ -424,7 +437,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -476,14 +489,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
+                            android:text="@string/members"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
+                            android:text="@string/operational"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
@@ -503,7 +516,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -555,14 +568,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
+                            android:text="@string/members"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
+                            android:text="@string/operational"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
@@ -582,7 +595,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -611,7 +624,7 @@
                     <RatingBar
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/rating8"
+                        android:id="@+id/rating0"
                         style="@style/Widget.AppCompat.RatingBar.Small"
                         android:numStars="3"
                         android:rating="2"
@@ -634,14 +647,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
+                            android:text="@string/members"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
+                            android:text="@string/operational"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
@@ -661,7 +674,165 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTitles"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/computers2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="cardClicked">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="87dp"
+                        android:src="@drawable/baloon" />
+
+                    <RatingBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rating10"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:numStars="3"
+                        android:rating="2"
+                        android:stepSize="1"
+                        android:isIndicator="true"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:text="Orange Export"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/members"
+                            android:textSize="9dp"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/colorSubtitles"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/operational"
+                            android:textSize="9dp"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/colorSubtitles"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TSh."
+                            android:textSize="5dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTitles"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/computers4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="cardClicked">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="87dp"
+                        android:src="@drawable/baloon" />
+
+                    <RatingBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rating98"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:numStars="3"
+                        android:rating="2"
+                        android:stepSize="1"
+                        android:isIndicator="true"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:text="Orange Export"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/members"
+                            android:textSize="9dp"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/colorSubtitles"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/operational"
+                            android:textSize="9dp"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/colorSubtitles"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TSh."
+                            android:textSize="5dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -713,14 +884,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
+                            android:text="@string/members"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
+                            android:text="@string/operational"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
@@ -740,7 +911,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -749,7 +920,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/computers"
+                android:id="@+id/computers98"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -769,7 +940,7 @@
                     <RatingBar
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/rating8"
+                        android:id="@+id/rating87"
                         style="@style/Widget.AppCompat.RatingBar.Small"
                         android:numStars="3"
                         android:rating="2"
@@ -792,14 +963,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
+                            android:text="@string/members"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
+                            android:text="@string/operational"
                             android:textSize="9dp"
                             android:paddingLeft="3dp"
                             android:textColor="@color/colorSubtitles"/>
@@ -819,7 +990,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -828,7 +999,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/computers"
+                android:id="@+id/computers65"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -848,40 +1019,47 @@
                     <RatingBar
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/rating8"
+                        android:id="@+id/rating978"
                         style="@style/Widget.AppCompat.RatingBar.Small"
                         android:numStars="3"
                         android:rating="2"
                         android:stepSize="1"
                         android:isIndicator="true"
                         />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="3dp"
-                        android:text="Orange Export"
+                        android:paddingRight="3dp"
+                        android:text="@string/orange_export"
                         android:textColor="@color/colorPrimary"
                         android:textStyle="bold"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="20 Members"
-                            android:textSize="9dp"
+                            android:paddingRight="3dp"
+                            android:text="@string/members"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:textColor="@color/colorSubtitles"
+                            android:textSize="9sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
-                            android:textSize="9dp"
+                            android:paddingStart="3dp"
+                            android:paddingRight="3dp"
                             android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
+                            android:text="@string/operational"
+                            android:textColor="@color/colorSubtitles"
+                            android:textSize="9sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -889,174 +1067,17 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:padding="2dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="TSh."
-                            android:textSize="5dp"
-                            android:textColor="@color/colorPrimaryDark"/>
+                            android:text="@string/tsh"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="5sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="200,000/-"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTitles"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/computers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_margin="5dp"
-                android:onClick="cardClicked">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="87dp"
-                        android:src="@drawable/baloon" />
-
-                    <RatingBar
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/rating8"
-                        style="@style/Widget.AppCompat.RatingBar.Small"
-                        android:numStars="3"
-                        android:rating="2"
-                        android:stepSize="1"
-                        android:isIndicator="true"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="3dp"
-                        android:text="Orange Export"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="20 Members"
-                            android:textSize="9dp"
-                            android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
-                            android:textSize="9dp"
-                            android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="2dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="TSh."
-                            android:textSize="5dp"
-                            android:textColor="@color/colorPrimaryDark"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="200,000/-"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorTitles"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/computers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_margin="5dp"
-                android:onClick="cardClicked">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    >
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="87dp"
-                        android:src="@drawable/baloon" />
-
-                    <RatingBar
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/rating8"
-                        style="@style/Widget.AppCompat.RatingBar.Small"
-                        android:numStars="3"
-                        android:rating="2"
-                        android:stepSize="1"
-                        android:isIndicator="true"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="3dp"
-                        android:text="Orange Export"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="20 Members"
-                            android:textSize="9dp"
-                            android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="8 Yrs operational"
-                            android:textSize="9dp"
-                            android:paddingLeft="3dp"
-                            android:textColor="@color/colorSubtitles"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="2dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="TSh."
-                            android:textSize="5dp"
-                            android:textColor="@color/colorPrimaryDark"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="200,000/-"
+                            android:text="@string/price"
                             android:textStyle="bold"
                             android:textColor="@color/colorTitles"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
@@ -1081,7 +1102,8 @@
             app:rippleColor="@color/colorPrimaryDark"
             android:layout_gravity="end|bottom"
             android:onClick="floatingButton"
-            />
+            android:id="@+id/floating"
+            android:focusable="true" />
     </LinearLayout>
 
 </LinearLayout>

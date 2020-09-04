@@ -10,4 +10,13 @@
     <string name="_2">2%</string>
     <string name="membership">Membership+</string>
     <string name="_0_5">0.5%</string>
+    <string name="operational">8 Yrs operational</string>
+    <string name="price">200,000/-</string>
+    <string name="automobiles">AutoMobiles</string>
+    <string name="members">20 Members</string>
+    <string name="tsh">TSh.</string>
+    <string name="sample_desc">sample desc</string>
+    <string name="mining">Mining</string>
+    <string name="orange_export">Orange Export</string>
+    <string name="stationaries">Stationaries</string>
 </resources>

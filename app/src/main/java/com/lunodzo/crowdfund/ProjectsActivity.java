@@ -3,16 +3,11 @@ package com.lunodzo.crowdfund;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ProjectsActivity extends AppCompatActivity {
 
@@ -53,18 +48,25 @@ public class ProjectsActivity extends AppCompatActivity {
             Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
             startActivity(accesoriesIntent);
         }
-        else if(view.getId() == R.id.stationaries){
+        else if (view.getId() == R.id.stationaries) {
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        } else if (view.getId() == R.id.avocado) {
+            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+            startActivity(accesoriesIntent);
+        } else if (view.getId() == R.id.automobile) {
             Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
             startActivity(accesoriesIntent);
         }
-        else if(view.getId() == R.id.avocado){
-            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
-            startActivity(accesoriesIntent);
-        }
-        else if(view.getId() == R.id.automobile){
-            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
-            startActivity(accesoriesIntent);
-        }
+    }
+
+    public void floatingButton(View view) {
+        Button myButton = findViewById(R.id.floating);
+        myButton.setOnClickListener(view1 -> {
+            Intent moveIntent = new Intent(getApplicationContext(), RegisterProjectActivity.class);
+            //Toast.makeText(getApplicationContext(), "Coming soon", Toast.LENGTH_LONG).show();
+            startActivity(moveIntent);
+        });
     }
 }
 
