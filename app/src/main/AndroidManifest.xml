@@ -17,18 +17,24 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ProjectsActivity">
+        <activity
+            android:name=".ProjectsActivity"
+            android:label="@string/projects">
 
         </activity>
 
-        <activity android:name=".ProjectDashboardActivity">
+        <activity
+            android:name=".ProjectDashboardActivity"
+            android:label="Project Details">
 
         </activity>
 
         <activity android:name=".RegisterActivity"></activity>
 
         <activity android:name=".RegisterProjectActivity"></activity>
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
