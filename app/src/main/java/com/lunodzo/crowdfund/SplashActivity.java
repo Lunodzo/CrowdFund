@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends Activity {
     @Override
@@ -19,7 +18,7 @@ public class SplashActivity extends Activity {
         Thread myThread = new Thread() {
             public void run(){
                 try {
-                    int display = 8000;
+                    int display = 3000;
                     int wait = 0;
                     while (wait < display){
                         sleep(100);

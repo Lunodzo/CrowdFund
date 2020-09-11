@@ -54,8 +54,8 @@ public class ProjectsActivity extends AppCompatActivity {
         } else if (view.getId() == R.id.avocado) {
             Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
             startActivity(accesoriesIntent);
-        } else if (view.getId() == R.id.automobile) {
-            Intent accesoriesIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+        } else if (view.getId() == R.id.computers65) {
+            Intent accesoriesIntent = new Intent(getApplicationContext(), RegisterProjectActivity.class);
             startActivity(accesoriesIntent);
         }
     }
