@@ -24,10 +24,9 @@
         android:padding="15dp"
         android:textColor="@color/colorText"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:textColorHint="@color/colorWhite"
-        />
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textColorHint="@color/colorWhite" />
 
     <EditText
         android:id="@+id/inputPassword"
@@ -40,9 +39,9 @@
         android:padding="15dp"
         android:textColor="@color/colorText"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:textColorHint="@color/colorWhite"/>
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textColorHint="@color/colorWhite" />
 
     <Button
         android:id="@+id/btn_login"
@@ -54,33 +53,35 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/btn_bg"
+        android:textAllCaps="false"
         android:text="@string/login" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:orientation="horizontal">-->
 
-        <Button
-            android:layout_width="130dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/btn_bg"
-            android:text="Facebook"
-            android:textAllCaps="false" />
+    <!--        <Button-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@drawable/btn_bg"-->
+    <!--            android:text="Facebook"-->
+    <!--            android:textAllCaps="false" />-->
 
-        <Button
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btn_bg"
-            android:text="Google"
-            android:textAllCaps="false" />
-    </LinearLayout>
+    <!--        <Button-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/btn_bg"-->
+    <!--            android:text="Google"-->
+    <!--            android:textAllCaps="false" />-->
+    <!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="20dp"
         android:padding="10dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp">

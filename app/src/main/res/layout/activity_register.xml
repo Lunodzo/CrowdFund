@@ -10,12 +10,27 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="318dp"
-        android:layout_height="222dp"
+        android:layout_height="131dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         app:srcCompat="@drawable/crowdlogowhite" />
 
 
+    <EditText
+        android:id="@+id/nationalID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+        android:ems="10"
+        android:hint=" National ID Number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorWhite" />
 
     <EditText
         android:id="@+id/inputfirstName"
@@ -27,7 +42,7 @@
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
         android:ems="10"
-        android:hint=" FirstName"
+        android:hint=" First Name"
         android:inputType="textPersonName"
         android:padding="15dp"
         android:textColor="@color/colorText"
@@ -78,6 +93,22 @@
         android:ems="10"
         android:hint=" Email"
         android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:ems="10"
+        android:hint=" Address"
+        android:inputType="textPostalAddress"
         android:padding="15dp"
         android:textColor="@color/colorText"
         android:textColorHint="@color/colorWhite" />

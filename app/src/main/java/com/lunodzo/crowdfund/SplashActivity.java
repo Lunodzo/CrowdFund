@@ -3,39 +3,23 @@ package com.lunodzo.crowdfund;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.annotation.Nullable;
 
 public class SplashActivity extends Activity {
+    private final int SPLASH_TIME_OUT = 2000;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        displaySplash();
+
+        new Handler().postDelayed(() -> {
+            Intent i = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(i);
+            finish();
+        }, SPLASH_TIME_OUT);
     }
 
-    public void displaySplash(){
-        Thread myThread = new Thread() {
-            public void run(){
-                try {
-                    int display = 3000;
-                    int wait = 0;
-                    while (wait < display){
-                        sleep(100);
-                        wait = wait + 100;
-                    }
-                    super.run();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                finally {
-                    Intent a = new Intent(SplashActivity.this, MainActivity.class);
-                    startActivity(a);
-                    finish();
-                }
-            }
 
-        };
-        myThread.start();
-    }
 }

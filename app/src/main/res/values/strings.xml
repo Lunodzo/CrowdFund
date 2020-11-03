@@ -28,4 +28,15 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="crowdfund">Crowd Fund</string>
+    <string name="just_a_second">Just a second..</string>
+    <string name="accessories">Accessories</string>
+    <string name="we_sell_on_your_behalf">We sell on your behalf</string>
+    <string name="todo">TODO</string>
+    <string name="manager_name">Lunodzo Mwinuka</string>
+    <string name="project_manager">Project Manager</string>
+    <string name="heading">Heading</string>
+    <string name="investors">Investors</string>
+    <string name="_500">500</string>
+    <string name="a_lot_of_texts_should_ere_a_e_ere_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here_a_lot_of_texts_should_be_put_here">A lot of texts should ere A e ere A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here A lot of texts should be put here</string>
 </resources>

@@ -5,54 +5,53 @@
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp">
-    </RelativeLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        >
+        android:layout_marginRight="20dp">
 
-        <ImageButton
-            android:layout_width="319dp"
-            android:layout_height="174dp"
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
             android:layout_gravity="center"
-            android:src="@drawable/baloon" />
-        <com.google.android.material.textfield.TextInputEditText
+            android:src="@drawable/crowdlogowhite" />
+
+        <EditText
+            android:id="@+id/projectName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
             android:hint="Project Name"
+            android:textColor="@color/colorWhite"
             android:background="@drawable/input_bg"
             android:textColorHint="@color/colorWhite"
             android:layout_margin="10dp"
-            android:padding="15dp"/>
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
-            android:textColorHint="@color/colorWhite"
-            android:hint="Slogan"
-            android:layout_margin="10dp"
-            android:padding="15dp"/>
-
+            android:padding="15dp" />
 
 
         <EditText
-            android:id="@+id/editTextNumber2"
+            android:id="@+id/slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:background="@drawable/input_bg"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:hint="Slogan"
+            android:layout_margin="10dp"
+            android:padding="15dp" />
+
+
+        <EditText
+            android:id="@+id/minDeposit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/colorWhite"
             android:layout_margin="10dp"
             android:hint="Minimum Deposit"
             android:inputType="number"
@@ -61,11 +60,12 @@
             android:padding="15dp"/>
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/dateEstablished"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:textColor="@color/colorWhite"
             android:inputType="date"
             android:layout_margin="10dp"
             android:background="@drawable/input_bg"
@@ -74,26 +74,43 @@
             android:padding="15dp"/>
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/projectDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:inputType="textCapSentences"
             android:gravity="start|top"
             android:padding="15dp"
-            android:inputType="textMultiLine"
+            android:textColor="@color/colorWhite"
             android:layout_margin="10dp"
             android:background="@drawable/input_bg"
             android:textColorHint="@color/colorWhite"
-            android:hint="Project Details"/>
+            android:hint="Project Details" />
+
+        <EditText
+            android:id="@+id/projectLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Project Location"
+            android:inputType="textPostalAddress|textCapSentences"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite" />
 
         <Button
+            android:id="@+id/btnAdd"
             android:layout_width="179dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/btn_bg"
             android:text="add project"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:textColor="@color/colorPrimaryDark" />
     </LinearLayout>
 
 

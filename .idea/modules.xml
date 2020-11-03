@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CrowdFund.iml" filepath="$PROJECT_DIR$/.idea/modules/CrowdFund.iml" group="CrowdFund" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="CrowdFund/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CrowdFund.iml" filepath="$PROJECT_DIR$/.idea/modules/CrowdFund.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CrowdFund.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CrowdFund.app.iml" />
     </modules>
   </component>
 </project>
