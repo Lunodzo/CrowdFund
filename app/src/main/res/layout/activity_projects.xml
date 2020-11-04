@@ -25,18 +25,24 @@
         android:numColumns="3"
         android:padding="1dp"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="10dp">
+        android:verticalSpacing="10dp"></GridView>
 
-
-    </GridView>
-
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnRegister"
-        android:layout_width="126dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_cycle"
-        android:text="Register New"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite" />
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="btnClicked"
+        android:src="@drawable/ic_baseline_add_24" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnRegister"-->
+    <!--        android:layout_width="126dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:background="@drawable/btn_cycle"-->
+    <!--        android:text="Register New"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="@color/colorWhite" />-->
 </LinearLayout>

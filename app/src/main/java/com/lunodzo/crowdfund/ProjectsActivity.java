@@ -8,9 +8,13 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -23,16 +27,17 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class ProjectsActivity extends AppCompatActivity {
-    GridView projectList;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_projects);
-        projectList = findViewById(R.id.project_grid);
+
 
         if (haveNetworkConnection()) {
             new RetrieveProjects().execute();
@@ -40,12 +45,12 @@ public class ProjectsActivity extends AppCompatActivity {
             Toast.makeText(this, "No Internet Connection", Toast.LENGTH_SHORT).show();
         }
 
-        Button myButton = findViewById(R.id.btnRegister);
-
-        myButton.setOnClickListener(v -> {
-            Intent registerProject = new Intent(getApplicationContext(), RegisterProjectActivity.class);
-            startActivity(registerProject);
-        });
+//        Button myButton = findViewById(R.id.btnRegister);
+//
+//        myButton.setOnClickListener(v -> {
+//            Intent registerProject = new Intent(getApplicationContext(), RegisterProjectActivity.class);
+//            startActivity(registerProject);
+//        });
 
     }
 
@@ -66,24 +71,82 @@ public class ProjectsActivity extends AppCompatActivity {
         return haveConnectedWifi || haveConnectedMobile;
     }
 
+    public class CustomAdapter extends BaseAdapter {
+        private final Context context;
+        // AQuery aQuery;
+
+        public ArrayList<HashMap<String, String>> projectImage = new ArrayList<HashMap<String, String>>();
+        LayoutInflater inflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        public CustomAdapter(Context context, ArrayList<HashMap<String, String>> data) {
+            this.context = context;
+            projectImage = data;
+            //aQuery=new AQuery(context);
+        }
+
+        @Override
+        public int getCount() {
+            return projectImage.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return projectImage.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            final ViewHolder holder;
+            if (convertView == null) {
+                convertView = inflater.inflate(R.layout.activity_projects_grid, null);
+                holder = new ViewHolder();
+                holder.imageView = convertView.findViewById(R.id.imageView);
+                convertView.setTag(holder);
+            } else {
+                holder = (ViewHolder) convertView.getTag();
+            }
+            return convertView;
+        }
+
+        class ViewHolder {
+            ImageView imageView;
+        }
+    }
+
     class RetrieveProjects extends AsyncTask<String, String, String> implements AttributeSet {
         ProgressDialog progressDialog;
         String php_response;
+        GridView projectList = findViewById(R.id.project_grid);
 
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            super.onPostExecute(s);
-
             progressDialog.dismiss();
-            String[] projectNames = php_response.split("#");
-            ArrayAdapter<String> adapterProjectNames = new ArrayAdapter<>(ProjectsActivity.this, R.layout.activity_projects_grid, R.id.projectName, projectNames);
-            projectList.setAdapter(adapterProjectNames);
-            projectList.setOnItemClickListener((parent, view, position, id) -> {
-                Intent projectIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
-                projectIntent.putExtra("id", position);
-                startActivity(projectIntent);
-            });
+
+            //FETCH DATA
+            if (s == null) {
+                Toast.makeText(getApplicationContext(), "No data", Toast.LENGTH_SHORT).show();
+            } else {
+
+                //PARSE DATA FROM MYSQL DATABASE
+                String[] projectNames = php_response.split("#");
+                String[] projectImage = php_response.split("#");
+                ArrayAdapter<String> adapterProjectNames = new ArrayAdapter<>(ProjectsActivity.this, R.layout.activity_projects_grid, R.id.projectName, projectNames);
+                ArrayAdapter<String> adapterImage = new ArrayAdapter<>(ProjectsActivity.this, R.layout.activity_projects_grid, R.id.icon, projectImage);
+                projectList.setAdapter(adapterProjectNames);
+                projectList.setAdapter(adapterImage);
+
+                projectList.setOnItemClickListener((parent, view, position, id) -> {
+                    Intent projectIntent = new Intent(getApplicationContext(), ProjectDashboardActivity.class);
+                    projectIntent.putExtra("id", position);
+                    startActivity(projectIntent);
+                });
+            }
         }
 
         @Override

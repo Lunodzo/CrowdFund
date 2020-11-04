@@ -1,12 +1,12 @@
 package com.lunodzo.crowdfund;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void newUser(View view) {
         if (view.getId() == R.id.newUser){
-            Intent newIntent = new Intent(getApplicationContext(), RegisterActivity.class);
+            Intent newIntent = new Intent(getApplicationContext(), RegisterUSerActivity.class);
             startActivity(newIntent);
         }
     }

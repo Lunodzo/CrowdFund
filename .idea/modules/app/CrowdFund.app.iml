@@ -48,6 +48,7 @@
     <orderEntry type="library" name="Gradle: ./app/libs/httpmime-4.5.1.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./app/libs/android-async-http-1.4.4.jar" level="project" />
     <orderEntry type="library" name="Gradle: ./app/libs/httpclient-4.5.1.jar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.picasso:picasso:2.5.2" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.3.0-alpha07" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.1.0" level="project" />

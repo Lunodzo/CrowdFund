@@ -99,7 +99,7 @@
             android:id="@+id/newUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New User"
+            android:text="New User?"
             android:textColor="@color/colorTitles"
             android:textAlignment="textEnd"
             android:gravity="end"

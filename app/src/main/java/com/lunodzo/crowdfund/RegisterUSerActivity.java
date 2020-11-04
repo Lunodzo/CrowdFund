@@ -7,6 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -26,7 +27,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterUSerActivity extends AppCompatActivity {
     String nationalID, firstName, lastName, phoneNumber, emailAddress, address;
 
     @Override
@@ -63,6 +64,10 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
+
+    //SIGN IN IMPLEMENTATION
+
+
     //Method to check internet connection
     private boolean haveNetworkConnection() {
         boolean haveConnectedWifi = false;
@@ -82,6 +87,11 @@ public class RegisterActivity extends AppCompatActivity {
         return haveConnectedWifi || haveConnectedMobile;
     }
 
+    public void signIn(View view) {
+        Intent signIntent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(signIntent);
+    }
+
     //Create inner class Async to upload data
     class RegisterUser extends AsyncTask<String, String, String> {
         //Create progress dialog
@@ -93,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(RegisterActivity.this);
+            pDialog = new ProgressDialog(RegisterUSerActivity.this);
             pDialog.setMessage("Registering User");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(false);
@@ -145,10 +155,10 @@ public class RegisterActivity extends AppCompatActivity {
             pDialog.dismiss();
 
             if (php_response.equals("1")) {
-                Toast.makeText(RegisterActivity.this, "User registered", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterUSerActivity.this, "User registered", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), ProjectsActivity.class));
             } else {
-                Toast.makeText(RegisterActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterUSerActivity.this, "Failed", Toast.LENGTH_SHORT).show();
             }
         }
     }

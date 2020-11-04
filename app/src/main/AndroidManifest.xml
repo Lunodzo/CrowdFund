@@ -34,7 +34,7 @@
             android:label="Project Details"></activity>
         <activity
             android:parentActivityName=".MainActivity"
-            android:name=".RegisterActivity"
+            android:name=".RegisterUSerActivity"
             android:label="@string/register" />
         <activity
             android:parentActivityName=".ProjectsActivity"
